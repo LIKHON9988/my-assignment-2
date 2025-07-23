@@ -132,3 +132,38 @@ h3 {
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
+
+/* section 3 */
+
+.parent-3 {
+  margin-top: 210.13px;
+  display: flex;
+}
+.parent-3-left {
+  flex: 1;
+  position: relative;
+}
+.parent-3-right {
+  padding: 38px 0px 38px 60px;
+}
+.popup-img {
+  position: absolute;
+  transform: translate(400px);
+  max-width: 286px;
+  height: auto;
+}
+
+.parent-3-right h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 1);
+  margin-bottom: 20px;
+}
+.parent-3-right li {
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+.list-item {
+  padding-left: 25px;
+}
