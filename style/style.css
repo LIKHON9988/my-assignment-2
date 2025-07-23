@@ -1,0 +1,78 @@
+/* common  */
+
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+  background-color: rgba(245, 248, 255, 1);
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.font-noto {
+  font-family: "Noto Serif", serif;
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+
+/* navber img */
+
+.nav-ber {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.nav-ber ul {
+  display: flex;
+  gap: 48px;
+  list-style: none;
+}
+.nav-ber a {
+  text-decoration: none;
+}
+.item-1 {
+  color: rgba(37, 36, 50, 1);
+  font-weight: bold;
+}
+.item-2 {
+  color: rgba(137, 135, 161, 1);
+}
+.item-3 {
+  color: rgba(0, 0, 0, 1);
+}
+
+/* body part start  */
+
+/* section 1 */
+
+.parent-1 {
+  display: flex;
+  margin-top: 120px;
+  position: relative;
+}
+.parent-1-right {
+  margin-top: 162px;
+  flex: 1;
+}
+.parent-1-left {
+  flex: 1;
+}
+.parent-1-right h1 {
+  font-size: 65px;
+  font-weight: bold;
+}
+.parent-1-right p {
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 13px;
+}
+.parent-1-left img {
+  position: absolute;
+  bottom: 0px;
+}
