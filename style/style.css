@@ -415,6 +415,9 @@ h3 {
   .item-2 {
     display: none;
   }
+  .nav-ber .item-3 {
+    font-size: 14px;
+  }
   .nav-ber {
     margin: 13px 16px;
   }
@@ -427,10 +430,19 @@ h3 {
 
   .parent-1-left img {
     position: static;
+    width: 343px;
+    height: 195px;
   }
   .parent-1-right {
     margin-top: 20px;
     margin-bottom: 50px;
+  }
+  .parent-1-right h1 {
+    font-size: 24px;
+  }
+  .parent-1-right p {
+    font-size: 14px;
+    margin-right: 16px;
   }
 
   .parent-1 {
@@ -447,7 +459,21 @@ h3 {
   .parent-2 {
     margin: 0px 16px;
   }
-
+  .child-1 h1 {
+    font-size: 24px;
+  }
+  .child-1 p {
+    font-size: 14px;
+  }
+  .cards div {
+    width: 171px;
+    height: 340px;
+  }
+  .cards p,
+  .cards h3,
+  .cards button {
+    font-size: 16px;
+  }
   /* third part */
 
   .parent-3 {
@@ -460,8 +486,9 @@ h3 {
   .popup-img {
     display: none;
   }
-  .parent-3-left {
-    width: 200px;
+  .cover-img {
+    width: 358px;
+    height: 396px;
   }
 
   /* fourth part  */
