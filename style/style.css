@@ -427,13 +427,15 @@ h3 {
 
   .parent-1-left img {
     position: static;
-    margin-left: 0%;
+  }
+  .parent-1-right {
+    margin-top: 20px;
+    margin-bottom: 50px;
   }
 
   .parent-1 {
     flex-direction: column-reverse;
     margin-bottom: 100px;
-    display: block;
     margin: 0px 16px;
   }
 
