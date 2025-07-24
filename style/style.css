@@ -4,7 +4,6 @@
   box-sizing: border-box;
   padding: 0%;
   margin: 0%;
-  background-color: rgba(245, 248, 255, 1);
 }
 
 .container {
@@ -138,6 +137,7 @@ h3 {
 .parent-3 {
   margin-top: 210.13px;
   display: flex;
+  position: relative;
 }
 .parent-3-left {
   flex: 1;
@@ -148,6 +148,10 @@ h3 {
 .popup-img {
   max-width: 286px;
   height: auto;
+  position: absolute;
+  background-color: transparent;
+  top: -135px;
+  left: 350px;
 }
 
 .parent-3-right h1 {
