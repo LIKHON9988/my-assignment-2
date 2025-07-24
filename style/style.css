@@ -32,9 +32,19 @@
   gap: 48px;
   list-style: none;
 }
+.nav-ber li {
+  transition: transform 1s;
+}
+.nav-ber li:hover {
+  transform: translateY(-7px);
+}
 .nav-ber a {
   text-decoration: none;
   font-size: 18px;
+  cursor: pointer;
+}
+.nav-ber a:hover {
+  color: rgba(233, 90, 8, 1);
 }
 .item-1 {
   color: rgba(37, 36, 50, 1);
@@ -131,6 +141,14 @@ h3 {
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
+.cards div {
+  transition: transform 0.7s;
+  cursor: pointer;
+}
+.cards div:hover {
+  transform: translateY(-13px);
+  box-shadow: 0px 0px 30px rgb(206, 204, 204);
+}
 
 /* section 3 */
 
@@ -187,15 +205,106 @@ h3 {
 }
 
 /* section 5 */
+.bloom {
+  background-image: url("../assets/deal-bloom.png");
+}
 
-/*  */
+.ana {
+  background-image: url("../assets/deal-ana.png");
+}
 
-/*  */
+.zabo {
+  background-image: url("../assets/deal-zabo.png");
+}
 
-/*  */
+.parent-5 {
+  padding: 60px 0;
+  text-align: center;
+  justify-items: center;
+}
 
-/*  */
+.father {
+  display: flex;
+  gap: 30px;
+}
 
+.left-part {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.card {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 350px;
+  height: 200px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.right {
+  width: 750px;
+  height: 420px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.text {
+  padding: 15px 25px;
+  border-radius: 10px;
+}
+
+.text h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: Noto Serif;
+}
+
+.text a {
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.children {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.right h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.card {
+  cursor: pointer;
+  transition: transform 1s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+.right {
+  cursor: pointer;
+  transition: transform 1s;
+}
+.right:hover {
+  transform: translateY(-10px);
+}
 /* section 6 */
 
 .parent-6 {
@@ -250,14 +359,14 @@ h3 {
   font-size: 16px;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
+  transition: transform 1s;
+}
+.subscribe-form button:hover {
+  transform: scale(1.1);
+  background-color: rgb(6, 121, 214);
 }
 
-/* .parent-6 {
-  margin-top: 120px;
-  width: 100%;
-  height: 600px;
-  background-color: aqua;
-} */
+/* footer section start */
 
 .footer-part {
   display: flex;
@@ -277,10 +386,21 @@ h3 {
   margin-bottom: 40px;
   font-size: 22px;
   color: rgba(107, 114, 128, 1);
+  cursor: pointer;
+  transition: transform 1s;
+}
+.list-menu li:hover {
+  transform: translateY(-10px);
+  color: rgba(233, 90, 8, 1);
 }
 
 .icon {
   margin-left: 24px;
+  transition: transform 1s;
+  cursor: pointer;
+}
+.icon:hover {
+  transform: scale(1.2);
 }
 .twitter {
   padding: 5px;
