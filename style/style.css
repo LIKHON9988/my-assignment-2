@@ -409,211 +409,198 @@ h3 {
 
 /* responsive part   */
 
-@media screen and (max-width: 600px) {
-  /* nav section */
-  .item-1,
-  .item-2 {
-    display: none;
+@media only screen and (max-width: 768px) {
+  /* Common adjustments */
+  .container {
+    padding: 0 15px;
   }
-  .nav-ber .item-3 {
-    font-size: 14px;
-  }
+  
+  /* 1. Navbar */
   .nav-ber {
-    max-width: 361px;
-    margin: auto;
-    margin-top: 20px;
+    margin-top: 15px;
+    padding: 10px 0;
   }
-  .nav-ber img {
+  .nav-ber ul {
+    gap: 15px;
+  }
+  .nav-ber ul li:not(:last-child) {
+    display: none; /* Hide all nav items except cart */
+  }
+  .item-3 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .item-3 i {
+    font-size: 20px;
+  }
+  .item-3 span {
+    display: none; /* Hide cart text, only show icon */
+  }
+  .nav-ber img{
     width: 65px;
     height: 40px;
   }
-
-  /* main section */
-
-  .parent-1-left img {
-    position: static;
-    width: 393.18px;
-    height: 245px;
-    margin-top: 25px;
-    margin: auto;
-  }
-  .parent-1-right {
-    margin-top: 20px;
-    margin-bottom: 50px;
-  }
-  .parent-1-right h1 {
-    font-size: 24px;
-    max-width: 361px;
-    margin: auto;
-  }
-  .parent-1-right p {
-    font-size: 14px;
-    margin-right: 16px;
-    max-width: 361px;
-    margin: auto;
-  }
-
+  
+  /* 2. Banner */
   .parent-1 {
-    flex-direction: column-reverse;
-  }
-
-  /* second section */
-
-  .cards {
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 361px;
-    margin: auto;
+    flex-direction: column;
     margin-top: 30px;
   }
-
+  .parent-1-left {
+    order: -1; /* Move image to top */
+    margin-bottom: 20px;
+  }
+  .parent-1-left img {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .parent-1-right {
+    margin-top: 0;
+    text-align: left; /* Left align content */
+  }
+  .parent-1-right h1 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+  .parent-1-right p {
+    font-size: 16px;
+  }
+  
+  /* 3. Plants Section */
   .child-1 h1 {
-    font-size: 24px;
-    margin-top: -120px;
+    font-size: 32px;
+    margin-top: -40px;
   }
   .child-1 p {
-    font-size: 14px;
-    max-width: 361px;
-    margin: auto;
+    font-size: 16px;
+    text-align: left;
+    margin-top: 10px;
   }
-  .cards div {
-    width: 171px;
-    height: 340px;
+  .cards {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 15px;
+    margin-top: 20px;
   }
-  .cards p,
-  .cards h3 {
+  .cards p, .cards h3 {
     font-size: 16px;
   }
   .cards button {
-    font-size: 10px;
-    height: 30px;
+    height: 40px;
+    margin-top: 15px;
+    font-size: 14px;
   }
-  /* third part */
-
+  
+  /* 4. Plants Lover Section */
   .parent-3 {
     flex-direction: column;
-    max-width: 358px;
-    margin: auto;
-    margin-top: 60px;
+    margin-top: 85px;
   }
-  .parent-3-right {
-    padding-left: 0%;
+  .cover-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
   }
   .popup-img {
     display: none;
   }
-  .cover-img {
-    width: 358px;
-    height: 396px;
-
-    text-align: center;
+  .parent-3-right {
+    padding: 0;
+    text-align: left;
   }
   .parent-3-right h1 {
-    font-size: 24px;
+    font-size: 32px;
   }
-  .list-item li {
-    font-size: 14px;
-    margin-left: -15px;
+  .parent-3-right li {
+    font-size: 16px;
+    margin-bottom: 15px;
   }
-
-  /* fourth part  */
-
-  .parent-4 {
-    margin-top: 133px;
-    margin-bottom: 133px;
+  .list-item {
+    padding-left: 20px;
   }
+  
+  /* 5. Latest Deal Section */
   .parent-4 h1 {
-    font-size: 24px;
-    margin-top: -120px;
-    margin-bottom: 20px;
+    font-size: 32px;
+    margin-top: -80px;
   }
   .parent-4 p {
-    font-size: 14px;
-    max-width: 361px;
-    margin: auto;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
   }
-
-  /* fifth part  */
-
   .father {
     flex-direction: column;
-    max-width: 361px;
-    margin: auto;
-    margin-top: -165px;
+  }
+  .left-part {
+    width: 100%;
   }
   .card {
-    width: 361px;
-    height: 177px;
-    margin: auto;
+    width: 100%;
+    height: 150px;
   }
   .right {
-    width: 361px;
-    height: 177px;
-    margin: auto;
+    width: 100%;
+    height: 150px;
   }
   .text h2 {
-    font-size: 24px;
-  }
-
-  /* part 6 */
-  .parent-6 {
-    width: 100%;
-    height: 230px;
-    margin-left: 0%;
-    margin-right: 0%;
-    padding: 0%;
-    margin-top: 10px;
-    min-width: 350px;
-  }
-  .subscribe-form {
-    width: 318px;
-    height: 30px;
-    text-align: center;
-    margin: auto;
-  }
-  .subscribe-form input[type="email"] {
-    margin-left: 0%;
-    text-align: center;
-    font-size: 10px;
-    padding-left: -200px;
-  }
-
-  .subscribe-form button {
-    width: 103px;
-    height: 30px;
-    padding: 0%;
-    font-size: 10px;
-  }
-  .overlay h2 {
     font-size: 20px;
   }
-
-  /* footer part */
-
+  
+  /* 6. Join Section */
+  .parent-6 {
+    padding: 60px 15px;
+    margin-top: 40px;
+  }
+  .overlay {
+    padding: 30px 15px;
+  }
+  .overlay h2 {
+    font-size: 28px;
+  }
+  .subscribe-form {
+    width: 100%;
+    flex-direction: column;
+  }
+  .subscribe-form input[type="email"] {
+    width: 100%;
+    margin-left: 0;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  .subscribe-form button {
+    width: 100%;
+    border-radius: 4px;
+  }
+  
+  /* 7. Footer Section */
   .footer-part {
     flex-direction: column;
-    max-width: 361px;
-    margin: auto;
-    margin-bottom: 20px;
-    margin-top: 50px;
+    gap: 30px;
   }
-
+  .footer-part p {
+    font-size: 16px;
+  }
   .list-menu {
     flex-direction: column;
-    gap: 0%;
+    gap: 0;
+  }
+  .list-menu ul {
+    margin-bottom: 0px;
   }
   .list-menu li {
     font-size: 16px;
-  }
-  .footer-part p {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    line-gap-override: 20px;
-    font-size: 16px;
-  }
-  .footer-part img {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   .icon-parent {
-    margin-left: -16px;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
   }
+  .icon {
+    width: 30px;
+    margin-left: 0px;
+    text-align: center;
+  }
 }
